@@ -43,7 +43,8 @@ const { MongoClient, ObjectId } = require("mongodb");
   const lista = ["Senhor dos Anéis", "Harry Potter"];
   //              0                   1
 
-  const filmes = db.collection("filmes");
+  // const filmes = db.collection("filmes");
+  const filmes = undefined;
 
   // [GET] - Read All
   app.get("/filmes", async (req, res) => {
