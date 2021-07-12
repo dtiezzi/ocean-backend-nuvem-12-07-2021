@@ -1,0 +1,1 @@
+mongodb+srv://yavasurA:@t5CDAtAfBGQcA2@cluster0.dtlyj.mongodb.net/ocean_db?retryWrites=true&w=majority
