@@ -24,6 +24,10 @@ const { MongoClient, ObjectId } = require("mongodb");
     res.sendFile("/index.html");
   });
 
+  app.get("/aboutus", function (req, res) {
+    res.sendFile("/aboutus.html");
+  });
+
   app.get("/hello", function (req, res) {
     res.send("Hello World");
   });
