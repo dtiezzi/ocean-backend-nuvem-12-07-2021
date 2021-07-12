@@ -21,7 +21,7 @@ const { MongoClient, ObjectId } = require("mongodb");
   app.use(express.json());
 
   app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname + "/index.html"));
+    res.sendFile("/index.html");
   });
 
   app.get("/hello", function (req, res) {
