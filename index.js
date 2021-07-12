@@ -14,10 +14,15 @@ const { MongoClient, ObjectId } = require("mongodb");
   // const db = client.db(dbName);
 
   const app = express();
+  app.use(express.static("public"));
 
   // Informo ao Express que todo corpo
   // de requisição será estruturado em JSON
   app.use(express.json());
+
+  app.get("/", function (req, res) {
+    res.sendFile(path.join(__dirname + "/index.html"));
+  });
 
   app.get("/hello", function (req, res) {
     res.send("Hello World");
